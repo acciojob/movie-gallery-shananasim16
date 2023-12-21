@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Image Gallery</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Image Gallery</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for image gallery */
+    .image-gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 5px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-1"><img src="image-url.jpg" alt="Movie 1" width="100" height="100"></div>
-            <!-- Repeat the col-sm-1 div for 11 more images -->
-        </div>
-        <div class="row">
-            <div class="col-sm-2"><img src="image-url.jpg" alt="Movie 2" width="100" height="100"></div>
-            <!-- Repeat the col-sm-2 div for 5 more images -->
-        </div>
-        <div class="row">
-            <div class="col-sm-4"><img src="image-url.jpg" alt="Movie 3" width="100" height="100"></div>
-            <!-- Repeat the col-sm-4 div for 2 more images -->
-        </div>
-        <div class="row">
-            <div class="col-sm-12"><img src="image-url.jpg" alt="Movie 4" width="100" height="100"></div>
-        </div>
+
+  <div class="container-fluid image-gallery">
+    <!-- First Row -->
+    <div class="row">
+      <div class="col-sm-1"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></div>
+      <div class="col-sm-1"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2"></div>
+      <!-- Add 10 more columns as needed -->
     </div>
+
+    <!-- Second Row -->
+    <div class="row">
+      <div class="col-sm-2"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></div>
+      <div class="col-sm-2"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2"></div>
+      <!-- Add 4 more columns as needed -->
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+      <div class="col-sm-4"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></div>
+      <div class="col-sm-4"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2"></div>
+      <div class="col-sm-4"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3"></div>
+    </div>
+
+    <!-- Fourth Row -->
+    <div class="row">
+      <div class="col-sm-12"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js Scripts (Optional, for Bootstrap features) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
